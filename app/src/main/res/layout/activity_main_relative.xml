@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Above, try different different combinations of:
+            layout_alignParentTop,
+            layout_alignParentBottom,
+             layout_alignParentLeft,
+             layout_alignParentRight
+             and see what it does to the buttons-->
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MyWidgets"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        />
+    <!-- Above, use different combinations of:
+           layout_below,
+           layout_above,
+           layout_toStartOf,
+           layout_toEndOf
+           and see what it does to the buttons-->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+
+        android:gravity="fill"
+
+        android:text="@string/Button"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flag"
+
+        android:layout_weight="1"
+        android:gravity="fill"
+
+        android:layout_below="@id/textview"
+        android:layout_alignParentRight="true"
+        />
+
+    <Switch
+        android:id="@+id/swith"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"
+        android:gravity="fill"
+
+        android:text="@string/Switch"
+
+        android:layout_below="@id/button2"
+        android:layout_alignParentRight="true"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"
+        android:gravity="fill"
+
+        android:text="@string/CheckBox"
+
+        android:layout_below="@id/button2"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:inputType="textPersonName"
+        android:hint="@string/EditText"
+
+        android:layout_below="@id/checkbox"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
